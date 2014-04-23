@@ -6,3 +6,6 @@ description      'Installs/Configures ircd-hybrid'
 long_description 'Installs/Configures ircd-hybrid'
 version          '0.1.0'
 
+%w( build-essential subversion ).each do |pkg|
+	depends pkg
+end

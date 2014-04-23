@@ -1,27 +1,31 @@
 # ircd-hybrid-cookbook
 
-TODO: Enter the cookbook description here.
+A cookbook designed to build and install ircd-hybrid from the official repository.
+Due to the complex nature of ircd configuration only the default configuration is installed.
+Configuration of ircd is left as an exercise for any recipes using this cookbook.
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+This cookbook has only tested under:
+ - Ubuntu 12.04
+ - Ubuntu 13.10
+ - Ubuntu 14.04
+ - Debian 7.4
+
+It may work on other Unix like operating systems, but your mileage may differ.
 
 ## Attributes
 
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['ircd-hybrid']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+| Key                                | Type    | Default                           | Description                                                          |
+|------------------------------------|---------|-----------------------------------|----------------------------------------------------------------------|
+| ['ircd']['user']                   | String  | "ircd"                            | The user to create that ircd will be installed as                    |
+| ['ircd']['group']                  | String  | "ircd"                            | The group to be created that ircd will be installed as               |
+| ['ircd']['directory']              | String  | "/usr/local/ircd"                 | The install directory "/usr/local/ircd"                              |
+| ['ircd']['repository']['uri']      | String  | ircd-hybrid subversion repo       | The ircd-hybrid source repository                                    |
+| ['ircd']['repository']['revision'] | String  | "HEAD"                            | The repository revision to check out                                 |
+| ['ircd']['source']['directory']    | String  | "/usr/local/ircd/ircd-hybrid-src" | The source code directory                                            |
+| ['ircd']['source']['openssl']      | Boolean | false                             | Build ircd-hybrid with openssl support                               |
+| ['ircd']['source']['openssl_dir']  | Boolean | nil                               | The openssl directory for building (use only if autodetection fails) |
 
 ## Usage
 
