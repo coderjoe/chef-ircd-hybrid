@@ -1,5 +1,7 @@
 # ircd-hybrid-cookbook
 
+[![Build Status](https://travis-ci.org/coderjoe/chef-ircd-hybrid.svg?branch=master)](https://travis-ci.org/coderjoe/chef-ircd-hybrid)
+
 A cookbook designed to build and install ircd-hybrid from the official repository.
 Due to the complex nature of ircd configuration only the default configuration is installed.
 Configuration of ircd is left as an exercise for any recipes using this cookbook.
