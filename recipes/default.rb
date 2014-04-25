@@ -1,3 +1,4 @@
+# Encoding: utf-8
 #
 # Cookbook Name:: ircd-hybrid
 # Recipe:: default
@@ -6,4 +7,4 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-include_recipe "ircd-hybrid::source"
+include_recipe 'ircd-hybrid::source'
