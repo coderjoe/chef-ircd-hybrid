@@ -1,9 +1,3 @@
 # 0.1.0
 
-Initial release of ircd-hybrid
-
-* Enhancements
-  * an enhancement
-
-* Bug Fixes
-  * a bug fix
+Initial release of the ircd-hybrid cookbook
