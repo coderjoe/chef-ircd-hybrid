@@ -1,4 +1,4 @@
-# ircd-hybrid-cookbook
+# ircd-hybrid cookbook
 
 [![Build Status](https://travis-ci.org/coderjoe/chef-ircd-hybrid.svg?branch=master)](https://travis-ci.org/coderjoe/chef-ircd-hybrid)
 
