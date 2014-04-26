@@ -9,5 +9,7 @@ directory node[:ircd][:source][:directory] do
   action :create
 end
 
-include_recipe 'ircd-hybrid::subversion'
-include_recipe 'ircd-hybrid::build'
+unless ::File.exist?("#{node[:ircd][:directory]}/bin/ircd")
+  include_recipe 'ircd-hybrid::subversion'
+  include_recipe 'ircd-hybrid::build'
+end

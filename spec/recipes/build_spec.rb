@@ -41,7 +41,8 @@ describe 'ircd-hybrid::build' do
     expect(chef_run).to run_bash('make').with(
       cwd: build_dir,
       user: user,
-      group: group
+      group: group,
+      code: 'make'
     )
   end
 
@@ -54,7 +55,8 @@ describe 'ircd-hybrid::build' do
     expect(chef_run).to run_bash('make install').with(
       cwd: build_dir,
       user: user,
-      group: group
+      group: group,
+      code: 'make install'
     )
   end
 end

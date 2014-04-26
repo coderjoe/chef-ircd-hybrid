@@ -35,6 +35,7 @@ bash 'make' do
   cwd ircd_source_dir
   user ircd_user
   group ircd_group
+  code 'make'
 end
 
 directory ircd_install_dir do
@@ -49,4 +50,5 @@ bash 'make install' do
   cwd ircd_source_dir
   user ircd_user
   group ircd_group
+  code 'make install'
 end
