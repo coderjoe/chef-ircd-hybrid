@@ -1,5 +1,7 @@
 # ircd-hybrid cookbook
 
+## Note: This project has been archived as I no longer use chef
+
 [![Build Status](https://travis-ci.org/coderjoe/chef-ircd-hybrid.svg?branch=master)](https://travis-ci.org/coderjoe/chef-ircd-hybrid)
 
 A cookbook designed to build and install ircd-hybrid from the official repository.
